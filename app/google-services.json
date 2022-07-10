@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "792744559694",
+    "project_id": "kotlin-firebase-4fdf0",
+    "storage_bucket": "kotlin-firebase-4fdf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792744559694:android:7019d29f19d5a04570af1f",
+        "android_client_info": {
+          "package_name": "com.lestrades.firebase_one"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792744559694-m42919vulasfild0ersq90p8q47fmmd9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATmHY-KafT7Q9ztmAjuV_fa4b-6NH648Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792744559694-m42919vulasfild0ersq90p8q47fmmd9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
