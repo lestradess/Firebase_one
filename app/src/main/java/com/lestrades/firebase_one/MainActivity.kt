@@ -3,6 +3,8 @@ package com.lestrades.firebase_one
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -29,6 +31,15 @@ class MainActivity : AppCompatActivity() {
         }
         val dataRef = database.child("hola_firebase").child("data")
         dataRef.addValueEventListener(listener)
-        //
+
+        findViewById<MaterialButton>(R.id.btnSend).setOnClickListener{
+            val data = findViewById<TextInputEditText>(R.id.etData).text
+            dataRef.setValue(data.toString())
+        }
+        findViewById<MaterialButton>(R.id.btnSend).setOnLongClickListener {
+            dataRef.removeValue()
+            true
+        }
     }
+
 }
